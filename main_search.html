@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>메인화면 검색창&버튼 팝업</title>
+
+</head>
+
+<style>
+     label {
+        display: block;
+        font-size: 20px;
+        background-color: #e43680;
+        padding: 10px;
+         margin-left: 1000px;
+    }
+
+</style>
+
+<script>
+  function showPopup() {
+    window.open("searching_pop.html", "상세검색", "width=600, height=600, left=100, top=50"); }
+</script>
+
+<body>
+<label class="main_search">
+    <input type="text" placeholder="뮤지컬 제목을 입력하세요" style="width: 300px">
+    <button class= "button" type="button">검색</button>
+    <input class="button" type="button" value="상세검색" onclick="showPopup();">
+</label>
+
+</body>
+</html>
